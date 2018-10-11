@@ -1,0 +1,37 @@
+.conteneur{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.carte{
+    background-image: url('Images/Totally_Spies.jpg');
+    background-size: cover;
+    border-radius: 20px;
+    height: 200px;
+    width: 150px;
+    min-width: 150px;
+    
+    transform-origin: bottom;
+    
+}
+
+.carte:hover{
+    border-width: 6px 6px 0 0;
+    border-color: aquamarine;
+    border-style: outset;
+}
+
+.carte-2{
+    transform: scale(1.25);
+    transform: translateX(-150px) rotate(10deg);
+}
+
+.carte-3{
+    transform: scale(1.25);
+    transform: translateX(-300px) rotate(20deg);
+}
+
+.carte-4{
+    transform: scale(1.25);
+    transform: translateX(-450px) rotate(30deg);
+}
