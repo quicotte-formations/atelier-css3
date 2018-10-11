@@ -1,0 +1,55 @@
+.conteneur{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.transfo-1:hover{
+    transform: rotate(-10deg) scale(1.35);
+}
+
+.transfo-2:hover{
+    transform: scale(0.90);
+}
+
+.transfo-3:hover{
+    transform: scale(0.90);
+    transform-origin: 0 0;
+}
+
+.transfo-4:hover{
+    transform: scale(1.75, 0.5)
+}
+
+.transfo-5:hover{
+    transform: translate(50px)
+}
+
+.transfo-6:hover{
+    transform: translate(-50px, -15px);
+}
+
+.transfo-7:hover{
+   transform: skewX(-45deg); 
+}
+
+.transfo-8:hover{
+    transform: skewY(-45deg);
+}
+
+.transfo-9:hover{
+    transform: scale(1.25) rotate(180deg) translate(50px);
+}
+
+.carte{
+    background-image: url('Images/Totally_Spies.jpg');
+    background-size: cover;
+    border-radius: 20px;
+    height: 200px;
+    width: 150px;
+    min-width: 150px;
+    margin-right: 25px;
+    margin-bottom: 25px;
+    
+    transition-duration: 400ms;
+    transition-timing-function: ease;
+}

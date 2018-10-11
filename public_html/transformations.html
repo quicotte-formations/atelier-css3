@@ -13,15 +13,29 @@ and open the template in the editor.
     </head>
     <body>
         <div class="conteneur">
-            <div class="carte transfo-1"></div>
-            <div class="carte transfo-2"></div>
-            <div class="carte transfo-3"></div>
-            <div class="carte transfo-4"></div>
-            <div class="carte transfo-5"></div>
-            <div class="carte transfo-6"></div>
-            <div class="carte transfo-7"></div>
-            <div class="carte transfo-8"></div>
-            <div class="carte transfo-9"></div>
+            <div class="carte transfo-1" onmouseover="jouerSon();" onmouseout="stopSon();"></div>
+            <div class="carte transfo-2" onmouseover="jouerSon();" onmouseout="stopSon();"></div>
+            <div class="carte transfo-3" onmouseover="jouerSon();" onmouseout="stopSon();"></div>
+            <div class="carte transfo-4" onmouseover="jouerSon();" onmouseout="stopSon();"></div>
+            <div class="carte transfo-5" onmouseover="jouerSon();" onmouseout="stopSon();"></div>
+            <div class="carte transfo-6" onmouseover="jouerSon();" onmouseout="stopSon();"></div>
+            <div class="carte transfo-7" onmouseover="jouerSon();" onmouseout="stopSon();"></div>
+            <div class="carte transfo-8" onmouseover="jouerSon();" onmouseout="stopSon();"></div>
+            <div class="carte transfo-9" onmouseover="jouerSon();" onmouseout="stopSon();"></div>
         </div>
+        <script>
+
+            var audio = new Audio("MP3/Chat04.mp3");
+
+            function stopSon() {
+
+//                audio.pause();
+            }
+
+            function jouerSon() {
+
+//                audio.play();
+            }
+        </script>
     </body>
 </html>
