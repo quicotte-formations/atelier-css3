@@ -6,47 +6,57 @@
     <style>
         .conteneur{
             display: flex;
-            max-width: 800px;
             flex-wrap: wrap;
-            background-color: black;
+            gap: 10px;
             justify-content: center;
+
+            padding: 10px;
+            background-color: black;
         }
         .cellule{
-            background-color: deepskyblue;
-            margin: 30px;
+            background-color: crimson;
             padding: 10px;
-            border-radius: 17px;
+            border-radius: 10px;
+            min-width: 200px;
+            min-height: 200px;
+        }
+
+        @media(max-device-width: 480px) {
+            .cellule{
+                min-width: 400px;
+                min-height: 400px;
+            }
         }
     </style>
 </head>
 <body>
     <span class="conteneur">
         <div class="cellule" style="grid-column-start: 0; grid-column-end: 1;">
-            TEST
+            1
         </div>
         <div class="cellule" style="height: 200px;">
-            TEST
+            2
         </div>
         <div class="cellule">
-            TEST
+            3
         </div>
         <div class="cellule">
-            TEST
+            4
         </div>
         <div class="cellule">
-            TEST
+            Cinq
         </div>
         <div class="cellule">
-            TEST
+            Six
         </div>
         <div class="cellule">
-            TEST
+            Sept
         </div>
         <div class="cellule">
-            TEST
+            Huit
         </div>
         <div class="cellule">
-            TEST
+            Neuf
         </div>
     </span>
 </body>
