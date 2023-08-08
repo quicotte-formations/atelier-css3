@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        #main-grille {
+            display: grid;
+            grid-template-rows: 80px 200px 200px;
+            grid-template-columns: 300px 300px 300px;
+            grid-gap: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        #main-title {
+            grid-row: 1;
+            grid-column: 2;
+        }
+
+        .article-grille {
+            display: grid;
+            grid-template-rows: 1fr 1fr 1fr;
+            grid-template-columns: 1fr 1fr 1fr;
+            background-color: cornflowerblue;
+            border-radius: 10px;
+        }
+
+        #article1 {
+            grid-row: 2;
+            grid-column: 1;
+            text-align: center;
+        }
+
+        #article2 {
+            grid-row: 2;
+            grid-column: 2;
+            text-align: center;
+        }
+
+        #article3 {
+            grid-row: 2;
+            grid-column: 3;
+            text-align: center;
+        }
+
+        #article4 {
+            grid-row: 3;
+            grid-column: 1;
+            text-align: center;
+        }
+
+        #article5 {
+            grid-row: 3;
+            grid-column: 2;
+            text-align: center;
+        }
+
+        .concert-title {
+            font-size: 1.2rem;
+            color: gold;
+            grid-row: 1;
+            grid-column: 2;
+        }
+
+        .ville {
+            grid-row: 2;
+            grid-column: 1;
+        }
+
+        .date {
+            grid-row: 2;
+            grid-column: 2;
+        }
+
+        .prix {
+            grid-row: 2;
+            grid-column: 3;
+        }
+
+        .reserver {
+            height: 2rem;
+            grid-row: 3;
+            grid-column: 2;
+        }
+
+        footer {
+            width: 932px;
+            display: grid;
+            grid-template-rows: 80px;
+            grid-template-columns: 200px 200px 200px 200px;
+            background-color: coral;
+            text-align: center;
+            align-items: center;
+        }
+
+    </style>
+    <title>Grid</title>
+</head>
+<body>
+
+<main id="main-grille">
+    <h1 id="main-title">Prochains spectacles</h1>
+    <article id="article1" class="article-grille">
+        <h2 class="concert-title">Miranda sings</h2>
+        <p class="ville">Bordeaux</p>
+        <p class="date">31 août</p>
+        <p class="prix">50 €</p>
+        <button class="reserver">Réserver</button>
+    </article>
+
+    <article id="article2" class="article-grille">
+        <h2 class="concert-title">Miranda sings</h2>
+        <p class="ville">Paris</p>
+        <p class="date">15 août</p>
+        <p class="prix">50 €</p>
+        <button class="reserver">Réserver</button>
+    </article>
+
+    <article id="article3" class="article-grille">
+        <h2 class="concert-title">Miranda sings</h2>
+        <p class="ville">Nantes</p>
+        <p class="date">17 août</p>
+        <p class="prix">50 €</p>
+        <button class="reserver">Réserver</button>
+    </article>
+
+    <article id="article4" class="article-grille">
+        <h2 class="concert-title">Miranda sings</h2>
+        <p class="ville">Rennes</p>
+        <p class="date">10 août</p>
+        <p class="prix">50 €</p>
+        <button class="reserver">Réserver</button>
+    </article>
+
+    <article id="article5" class="article-grille">
+        <h2 class="concert-title">Miranda sings</h2>
+        <p class="ville">Lyon</p>
+        <p class="date">21 août</p>
+        <p class="prix">50 €</p>
+        <button class="reserver">Réserver</button>
+    </article>
+</main>
+
+<footer>
+    <a href="#" id="lien1">Nous contacter</a>
+    <a href="#" id="lien2">Qui sommes-nous ?</a>
+    <a href="#" id="lien3">RGPD</a>
+    <a href="#" id="lien4">Sites partenaires</a>
+</footer>
+
+</body>
+</html>
