@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tableau de Livres Classiques</title>
+    <style>
+        table{
+            border-collapse: collapse;
+        }
+
+        h1{
+            border-color: crimson;
+            border-width: 3px;
+            border-style: solid;
+            border-radius: 30px;
+
+            padding: 100px 50px 5px 25px;
+
+            margin: 50px;
+
+            /*border: 3px dotted red;*/
+        }
+
+
+        th{
+            text-transform: uppercase;
+        }
+
+        tr:nth-of-type(even){
+            background-color: deepskyblue;
+        }
+
+        tr[data-pays=Russie]{
+            color: red;
+            font-weight: bold;
+        }
+
+        [data-adulte=oui]{
+            display: none;
+        }
+
+        table tr:hover{
+            background-color: gold;
+        }
+
+        td:hover{
+            font-size: 25px;
+        }
+
+    </style>
+</head>
+<body>
+<h1>Tableau de Livres Classiques</h1>
+<table>
+    <thead>
+    <tr>
+        <th>Titre</th>
+        <th>Auteur</th>
+        <th>Année de Parution</th>
+        <th>Prix</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr data-adulte="non" data-pays="Angleterre">
+        <td>Orgueil et Préjugés</td>
+        <td>Jane Austen</td>
+        <td>1813</td>
+        <td>15.99 €</td>
+    </tr>
+    <tr data-adulte="oui" data-pays="Royaume-Uni">
+        <td>1984</td>
+        <td>George Orwell</td>
+        <td>1949</td>
+        <td>12.49 €</td>
+    </tr>
+    <tr data-adulte="non" data-pays="France">
+        <td>Le Comte de Monte-Cristo</td>
+        <td>Alexandre Dumas</td>
+        <td>1844</td>
+        <td>19.99 €</td>
+    </tr>
+    <tr data-adulte="oui" data-pays="Russie">
+        <td>Crime et Châtiment</td>
+        <td>Fiodor Dostoïevski</td>
+        <td>1866</td>
+        <td>14.99 €</td>
+    </tr>
+    <tr data-adulte="non" data-pays="France">
+        <td>Les Misérables</td>
+        <td>Victor Hugo</td>
+        <td>1862</td>
+        <td>16.75 €</td>
+    </tr>
+    <tr data-adulte="non" data-pays="Espagne">
+        <td>Don Quichotte</td>
+        <td>Miguel de Cervantes</td>
+        <td>1605</td>
+        <td>11.25 €</td>
+    </tr>
+    <tr data-adulte="non" data-pays="États-Unis">
+        <td>Moby-Dick</td>
+        <td>Herman Melville</td>
+        <td>1851</td>
+        <td>18.50 €</td>
+    </tr>
+    <tr data-adulte="non" data-pays="France">
+        <td>Madame Bovary</td>
+        <td>Gustave Flaubert</td>
+        <td>1857</td>
+        <td>13.99 €</td>
+    </tr>
+    <tr data-adulte="non" data-pays="Grèce">
+        <td>L'Odyssée</td>
+        <td>Homer</td>
+        <td>8e siècle av. J.-C.</td>
+        <td>9.25 €</td>
+    </tr>
+    <tr data-adulte="non" data-pays="Royaume-Uni">
+        <td>Frankenstein</td>
+        <td>Mary Shelley</td>
+        <td>1818</td>
+        <td>10.50 €</td>
+    </tr>
+    <tr data-adulte="oui" data-pays="Royaume-Uni">
+        <td>Le Portrait de Dorian Gray</td>
+        <td>Oscar Wilde</td>
+        <td>1890</td>
+        <td>14.25 €</td>
+    </tr>
+    <tr data-adulte="non" data-pays="Russie">
+        <td>Guerre et Paix</td>
+        <td>Léon Tolstoï</td>
+        <td>1869</td>
+        <td>21.99 €</td>
+    </tr>
+    <tr data-adulte="non" data-pays="États-Unis">
+        <td>Les Aventures de Huckleberry Finn</td>
+        <td>Mark Twain</td>
+        <td>1884</td>
+        <td>9.99 €</td>
+    </tr>
+    <tr data-adulte="non" data-pays="France">
+        <td>L'Étranger</td>
+        <td>Albert Camus</td>
+        <td>1942</td>
+        <td>12.75 €</td>
+    </tr>
+    <tr data-adulte="non" data-pays="France">
+        <td>Les Trois Mousquetaires</td>
+        <td>Alexandre Dumas</td>
+        <td>1844</td>
+        <td>17.50 €</td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>
